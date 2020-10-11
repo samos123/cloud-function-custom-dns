@@ -1,0 +1,10 @@
+{
+    "name": "dnstest",
+    "version": "0.0.1",
+    "scripts": {
+        "start": "functions-framework --target=helloWorld"
+    },
+    "dependencies": {
+        "@google-cloud/functions-framework": "^1.7.1"
+    }
+}

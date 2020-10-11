@@ -1,0 +1,10 @@
+steps:
+- name: 'gcr.io/cloud-builders/gcloud'
+  args:
+  - functions
+  - deploy
+  - dnstest
+  - --source=.
+  - --trigger-http
+  - --runtime=nodejs10
+  - --allow-unauthenticated
