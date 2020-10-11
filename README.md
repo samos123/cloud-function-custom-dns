@@ -15,8 +15,15 @@ Create VMs dns-1 and dns-2 that reside in us-central1-a and us-central1-f:
 ./create-vms.sh
 ```
 
+Configure cloud DNS to forward DNS queries for samos-it.com to the DNS proxies:
+```
+./create-private-dns-zone.sh
+```
+
+Configure serverless VPC connector through the UI
 
 ## cleanup
 ```
 ./delete-vms.sh
+./delete-private-dns-zone.sh
 ```
